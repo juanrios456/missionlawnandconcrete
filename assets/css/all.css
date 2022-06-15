@@ -1,0 +1,27 @@
+* {
+    box-sizing: border-box;
+}
+body, html{
+    margin: 0 ;
+}
+h1{
+    font-size: 35px;
+}
+#background-image {
+    background-image: url(/images/mission-background.jpg);
+    background-repeat: no-repeat;
+    object-fit: cover;
+    position:fixed;
+    width: 100%;
+    height: 100vh;
+    z-index: -1;
+}
+#top-button{
+    z-index: 2;
+}
+.sections, .g-sections {
+    opacity: 0.9;
+}
+.sections{
+    background-color: #fff;
+}

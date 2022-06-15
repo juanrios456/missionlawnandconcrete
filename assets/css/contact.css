@@ -1,0 +1,174 @@
+h1{
+    font-size: 35px;
+}
+h2{
+    font-size:27px;
+}
+html{
+	-webkit-text-size-adjust: 100%;
+}
+/*creates the form */
+#form-wrapper{
+	margin:0 auto;
+	width:100%;
+	background-color: bisque;
+}
+.head-text{
+	margin:0 auto;
+	text-align: center;
+	padding:15px 0;
+}
+.container-3{
+    height:900px;
+	width:100%;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+}	
+form {
+	background-color: #fff;
+	flex-direction:column;
+	display:flex;
+	max-width:600px;
+	width:96%;
+	margin:5px;
+	padding:0 3vw;
+	border-radius:9px;
+}
+form h3 {
+	margin-bottom:20px;
+	font-weight:750;
+	color:rgb(73, 118, 156);
+}
+form input, form textarea, form select{
+	border:0;
+	margin:10px 0px;
+	background: #c2bcbc;
+	padding:10px 2px;
+	outline:none;
+}
+form select{
+	width:175px;
+}
+#f-drop {
+	cursor:pointer;
+}
+.option {
+	padding:10px 2px;
+}
+#submit{
+	padding:10px ;
+	background:#ff5361;
+	color:fff;
+	font-size: 20px;
+	border:0;
+	outline:none;
+	cursor:pointer;
+	margin:20px auto;
+	border-radius:25px;
+	text-align: center;
+}
+form textarea {
+	resize:none;
+}
+
+input:focus, textarea:focus, select:focus {
+	border: solid 2px #c17ce9;
+}
+
+textarea::-webkit-scrollbar-thumb {
+	background:#c17ce9;
+}
+
+/*for the js form validator*/
+.error{
+	color:red;
+}
+
+.error-border {
+	border-bottom: 1px solid red;	
+}
+
+#success {
+	color:#28A745;
+	text-align:center;
+	padding:10px 0;
+}
+#submit:hover {
+	box-shadow: 0 4px 8px 0;
+}
+.heading{
+	text-align:center;
+	padding:20px 0;
+	margin:0px;
+}
+.subheading{
+	margin:15px auto 0;
+}
+
+#info {
+	background-color: #fff;
+	align-items: center;
+	width:100%;
+	height:925px;
+}
+#info-2{
+	background-color:#fff;
+}
+.containers{
+	padding:0;
+	background-color: #c17ce9;
+	margin:10px auto;
+	border-radius: 9px;
+	border:solid black 5px;
+	display:flex;
+	flex-direction: column;
+	justify-content: center;
+	max-width:550px;
+	width:98%;
+}
+.container-1, .container-2{
+	display:flex;
+	border:solid 2px black;
+	border-radius:30px;
+	margin:25px auto;
+	background-color:#28A745;
+	flex-direction:column;
+	height:325px;
+	justify-content: center;
+	width:95%;
+}
+
+.phone, .email, .socials{
+	border-radius:15px;
+	background-color: antiquewhite;
+	border:solid black 2px;
+	padding:10px;
+	margin:10px auto;
+	display:block;
+	width:95%;
+	max-width:350px;
+}
+
+.phone:hover,.email:hover, .socials:hover {
+	box-shadow: 0 2px 4px 2px;
+	cursor:pointer;
+	opacity: 0.9;
+}
+.container-2 a, .container-1 a{
+	text-decoration:none;
+	color:black;
+}
+
+
+@media screen and (min-width:1000px) {
+	#info {
+		display:flex;
+		flex-direction:row;
+		height:80vh;
+	}
+	.containers{
+		max-width:475px;
+	}
+
+}

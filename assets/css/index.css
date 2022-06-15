@@ -1,0 +1,371 @@
+h1{
+    font-size: 35px;
+}
+h2{
+    font-size:27px;
+}
+/*Top image*/
+#top{
+    position:relative;
+    height:80vh;
+    text-align: center;
+    box-shadow: 2px 2px 4px;
+}
+
+#top img{
+    opacity: 0.8;
+    object-fit: cover;
+}
+#top-button{
+    position: fixed;
+    bottom:20px;
+    right:20px;
+}
+.heading{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    background-color: white;
+    border-radius:10px;
+    opacity: 0.87;
+    padding:20px;
+}
+#cl-wrapper{
+    display: flex;
+    justify-content: center;
+}
+
+#contact-link{
+    padding: 5px 10px;
+    border: 1px solid black;
+    border-radius: 15px;
+}
+#contact-link:hover{
+    cursor: pointer;
+}
+.head-text{
+    text-align: center;
+	padding:15px 0;
+    background-color: #fff;
+    opacity: 0.7;
+	margin:0 auto;
+}
+
+/*Contact Form*/
+
+.container-3{
+    background-color: bisque;
+    opacity: 0.9;
+    height:900px;
+	width:100%;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+}	
+form {
+	background:#fff;
+	flex-direction:column;
+	display:flex;
+	max-width:600px;
+	width:100%;
+	margin:5px;
+	padding:0 3vw;
+	border-radius:9px;
+}
+form h3 {
+	margin-bottom:20px;
+	font-weight:750;
+	color:rgb(73, 118, 156);
+}
+form input, form textarea, form select{
+	border:0;
+	margin:10px 0px;
+	background: #c2bcbc;
+	padding:10px 2px;
+	outline:none;
+}
+form select{
+	width:175px;
+}
+#f-drop {
+	cursor:pointer;
+}
+.option {
+	padding:10px 2px;
+}
+#submit{
+	padding:10px ;
+	background:#ff5361;
+	color:fff;
+	font-size: 20px;
+	border:0;
+	outline:none;
+	cursor:pointer;
+	margin:20px auto;
+	border-radius:25px;
+	text-align: center;
+}
+form textarea {
+	resize:none;
+}
+
+input:focus, textarea:focus, select:focus {
+	border: solid 2px #c17ce9;
+}
+
+textarea::-webkit-scrollbar-thumb {
+	background:#c17ce9;
+}
+
+/*for the js form validator*/
+.error{
+	color:red;
+}
+
+.error-border {
+	border-bottom: 1px solid red;	
+}
+
+#success {
+	color:#28A745;
+	text-align:center;
+	padding:10px 0;
+}
+#submit:hover {
+	box-shadow: 0 4px 8px 0;
+}
+.heading1{
+	text-align:center;
+	padding:20px 0;
+	margin:0px;
+}
+
+
+/*Services boxes*/
+#third-box {
+    background-color: hsl(109, 48%, 30%);
+    opacity:0.9;
+    width:100%;
+    padding:10px 0;
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+}
+.services {
+    height:65%;
+    width:65%;
+    padding:0 0 20px ;
+    margin: 20px 0;
+    text-align: center;
+    border:5px solid black;
+    box-shadow: 2px 3px 3px;
+    border-radius: 10px;
+    background-color: #fff;
+    font-size:25px;
+    text-decoration: none;
+    color:rgb(0, 0, 0);
+}
+
+.services:hover{
+    background-color:#28A745;
+    box-shadow: 6px 6px 6px;
+} 
+.services img{
+    border-radius:2px;
+}
+
+
+/*example boxes*/
+.examples {
+    background-color: rgb(210, 210, 210);
+    opacity: 0.9;
+    padding:25px 0px 50px;
+    display:flex;
+    flex-direction: column;
+    border:3px dotted #ccc;
+}
+
+
+.examples h1, 
+.examples p,
+.examples h2{
+    text-align: center;
+}
+
+.examples p{
+    text-indent: 25px;
+}
+.examples p,
+.right-list li,
+.left-list li{
+    font-size: 20px;
+}
+.example-subtitle{
+    margin:0;
+    padding:0;
+}
+#exterminator .left-image{
+    width: 220px;
+}
+.right-image, .left-image{
+    width:90%;
+    height: 90%;
+    border-radius:8px;
+    margin:0 auto;
+}
+.left-list li img, .right-list li img{
+    vertical-align: middle;
+    margin:0 10px;
+}
+.left-list, .right-list{
+    list-style: none;
+}
+
+.right-image,.left-image{
+    margin-bottom:20px;
+}
+
+@media screen and (min-width: 700px) {
+    /*Services Boxes*/
+    .services{
+       width:330px;
+       height: 250px;
+       justify-self: center;  
+       padding-bottom:60px;  
+    }
+    #third-box{
+        display: grid;
+        grid-template-columns: repeat(3, 160px);
+        gap: 10px;
+        grid-auto-rows: minmax(100px, auto);
+    }
+    #third-box h1{
+        width: 500px;
+        grid-column:2;
+        grid-row: 1;
+        text-align: center;
+        justify-self: center;
+    }
+    #landscaping{
+        grid-column:1;
+        grid-row:2;
+    }
+    #lawn{
+        grid-column:3;
+        grid-row:2;
+    }
+    #concrete{
+        grid-column:2;
+        grid-row:3;
+    }
+    /*Example Boxes*/
+    .examples{
+        display:grid;
+        grid-template-columns: repeat(3, 160px);
+        gap: 10px;
+        grid-auto-rows: minmax(70px, auto);
+        width:98%;
+        justify-content:center;
+        margin: 10px auto ;
+    }
+    .examples h1, 
+    .examples p,
+    .examples h2{
+        width:600px;
+        justify-self: center;
+    }
+    .examples h1, 
+    .examples p,
+    .examples h2{
+        grid-column: 2;
+    } 
+    .examples p{
+        grid-row: 2;
+    }
+    .examples h2{
+        grid-row:3;
+    }
+    .examples ul{
+        width:250px;
+        justify-self: center;
+    }
+    .left-list{
+        grid-column:1;
+        grid-row:4;
+    }
+    .right-image,
+    .left-image{
+        width:330px;
+        height:220px;
+        justify-self: center;
+        margin: 0;
+    }
+    .right-image{
+        grid-column:3;
+        grid-row:4;
+        
+    }
+    .right-list{
+        grid-column:3;
+        grid-row:4;
+    }
+    .left-image{
+        grid-column:1;
+        grid-row:4;
+    }
+    #exterminator .left-image{
+        width: 240px;
+        height: 300px;
+    }
+    #exterminator .right-image{
+        margin-top: 30px;
+    }
+}
+
+@media screen and (min-width: 840px) {
+    /*Services Boxes*/
+    #third-box{
+        gap: 0 25px;
+    }
+    .examples{
+        gap: 0 40px;
+    }
+}
+
+@media screen and (min-width: 1200px ) {
+    /*Services Boxes*/
+    #third-box {
+        grid-template-columns: repeat(3, 350px );
+        gap: 0 50px;
+    }
+    #third-box h1{
+        grid-column:2;
+        grid-row: 1;
+    }
+    #lawn{
+        grid-column:2;
+    }
+    #concrete{
+        grid-column: 3;
+        grid-row: 2;
+    }
+    .services{
+        width: 375px;
+        height: 320px;
+    }
+    .examples .left-image,
+    .examples .right-image {
+        width: 450px;
+        height: 340px;
+    }
+    #exterminator .left-image{
+        width: 340px;
+        height: 400px;
+    }
+    .left-list,
+    .right-list{
+        margin-top: 50px;
+    }
+}
